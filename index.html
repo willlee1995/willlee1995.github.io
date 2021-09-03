@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
     <link rel="stylesheet" href="css/fa-min.css" />
     <script defer src="/your-path-to-fontawesome/js/all.js"></script>
     <link rel="icon" href="img/ico.png" />
@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-lg">
         <a class="navbar-brand" href="#">
           <img
@@ -60,15 +60,15 @@
       </div>
     </nav>
     <!-- home -->
-    <section class="home">
-      <div class="animate__animated animate__bounce animate__delay-2s animate__bounce animate__delay-1s card rounded mt-1 container-lg">
-        <div class="row min-vh-100 align-items-center align-content-center">
+    <section class="bg-success home">
+      <div class="bg-success flex-shrink-0 animate__animated animate__bounce animate__delay-2s animate__bounce animate__delay-1s  rounded container-lg">
+        <div class=" row min-vh-90 align-items-center align-content-center">
           <div class="m-md-2 col-md-7 home-text ">
             <p class="text-capitalize">Hello I'm a</h1>
             <h1 class="text-decoration-line-through fw-bolder">Programmer</h1> 
             <h1 class="text-danger text-capitalize">Radiographer who codes,</h1> 
             <h2 class="fs-3">Will Lee</h2>
-            <p class="text-muted">A radiographer who is devoted to programming in developing systems, applications, and websites which try to make clinical life better</p>
+            <p class="text-muted">A radiographer who is devoted to programming in developing systems, applications, to make clinical life better</p>
           </div>
           <div class="col-md-4 home-img order-md-first ">
             <img class="rounded-circle mw-100" src="img/propic.jpg" alt="profile picture of Will">
@@ -77,15 +77,27 @@
       </div>
     </section>
     <!-- Self -->
-    
+    <section class="bg-secondary interests">
+      <div class=" flex-shrink-0 animate__animated animate__bounce animate__delay-2s animate__bounce animate__delay-1s rounded mt-1 container-lg">
+        <div class="bg-secondary row min-vh-100 align-items-start align-content-start">
+          <div class="m-md-3 col-md-12 home-text ">
+            <h1 class="text-capitalize text-center">Interests</h1>
+            <h1 class="text-decoration-line-through fw-bolder"></h1> 
+            <h1 class="text-danger text-capitalize"></h1> 
+            <h2 class="fs-3"></h2>
+            <p class="text-muted"></p>
+          </div>
+        </div>
+      </div>
+    </section>
 <!-- Button trigger modal -->
 <button type="button" class="m-auto rounded-circle fas fa-question-circle position-sticky bottom- start-0 btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
   
 </button>
 
 <!-- Modal -->
-<div class="modal fade modal-fullscreen-sm-down" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class=" modal fade modal-fullscreen-sm-down" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="bg-secondary modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">You can contact via</h5>
@@ -100,6 +112,11 @@
     </div>
   </div>
 </div>
+<footer class="fixed-bottom footer-sticky mt-auto py-lg-3 py-md-3 py-sm-2 bg-primary">
+  <div class="container">
+    <p class="text-muted">Copyright</p>
+  </div>
+</footer>
 
 
    
