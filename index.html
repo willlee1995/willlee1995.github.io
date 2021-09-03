@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fa-min.css" />
+    <script defer src="/your-path-to-fontawesome/js/all.js"></script>
+    <link rel="icon" href="img/ico.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Personal Homepage - Will Lee</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-lg">
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/logo-white-nobg.svg"
+            alt="Will's logo"
+            width="200"
+            height="75"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Contact</a>
+            </li>
+          </ul>
+          <span class="navbar-text"> Radiographer who codes </span>
+        </div>
+      </div>
+    </nav>
+    <!-- home -->
+    <section class="home">
+      <div class="animate__animated animate__bounce animate__delay-2s animate__bounce animate__delay-1s card rounded mt-1 container-lg">
+        <div class="row min-vh-100 align-items-center align-content-center">
+          <div class="m-md-2 col-md-7 home-text ">
+            <p class="text-capitalize">Hello I'm a</h1>
+            <h1 class="text-decoration-line-through fw-bolder">Programmer</h1> 
+            <h1 class="text-danger text-capitalize">Radiographer who codes,</h1> 
+            <h2 class="fs-3">Will Lee</h2>
+            <p class="text-muted">A radiographer who devotes in programming in developing systems, applications, and websites which try to make clinical life better</p>
+          </div>
+          <div class="col-md-4 home-img order-md-first ">
+            <img class="rounded-circle mw-100" src="img/propic.jpg" alt="profile picture of Will">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Self -->
+    
+<!-- Button trigger modal -->
+<button type="button" class="m-auto rounded-circle fas fa-question-circle position-sticky bottom- start-0 btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+  
+</button>
+
+<!-- Modal -->
+<div class="modal fade modal-fullscreen-sm-down" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">You can contact via</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Email: <a href="mailto: 20006323G@connect.polyu.hk">20006323G@connect.polyu.hk</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
