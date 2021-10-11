@@ -6,11 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/custom.min.css" />
+  <!--Bootstrap 5-->
   <link rel="stylesheet" href="css/fa-min.css" />
   <script defer src="/your-path-to-fontawesome/js/all.js"></script>
   <link rel="icon" href="img/ico.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>Personal Homepage - Will Lee</title>
+  <style>
+    .carousel-item {
+      display: box;
+      justify-items: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -21,52 +28,58 @@
         <img src="img/logo-white-nobg.svg" alt="Will's logo" width="200" height="75"
           class="d-inline-block align-text-top" />
       </a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarText" aria-expanded="sm" aria-label="Toggle navigation">
+        <!--Responsive dropdown menu tab-->
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacts">Contact</a>
+            <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
           </li>
         </ul>
-        <span class="navbar-text"> Radiographer who codes </span>
+        <div>
+          <span class="d-sm-none d-md-block navbar-text"> Radiographer who codes </span>
+        </div>
       </div>
+
+
+
     </div>
   </nav>
   <!-- home -->
-  <section class="bg-success home">
-    <div
-      class="bg-success flex-shrink-0 animate__animated animate__bounce animate__delay-2s animate__bounce animate__delay-1s  rounded container-lg">
+  <section id="home" class="bg-success home">
+    <div class="bg-success flex-shrink-0   rounded container-lg">
       <div class=" row min-vh-90 align-items-center align-content-center">
         <div class="m-md-2 col-md-7 home-text ">
           <p class="text-capitalize">Hello I'm a</h1>
-          <h1 class="text-decoration-line-through fw-bolder">Programmer</h1>
-          <h1 class="text-danger text-capitalize">Radiographer who codes,</h1>
-          <h2 class="fs-3">Will Lee</h2>
-          <p class="text-muted">A radiographer who is devoted to programming in developing systems, applications, to
-            make clinical life better</p>
+            <h1 class="text-decoration-line-through fw-bolder">Programmer</h1>
+            <h1 class="text-danger text-capitalize">Radiographer who codes,</h1>
+            <h2 class="fs-3">Will Lee</h2>
+            <p class="text-muted">A radiographer who is devoted to programming in developing systems, applications, to
+              make clinical life better</p>
         </div>
-        <div class="col-md-4 home-img order-md-first ">
+        <div
+          class="animate__animated animate__bounce animate__delay-1s animate__bounce animate__delay-1s col-md-4 home-img order-md-first ">
           <img class="rounded-circle mw-100" src="img/propic.jpg" alt="profile picture of Will">
         </div>
       </div>
     </div>
   </section>
   <!-- Self -->
-  <section class="bg-secondary interests">
-    <div
-      class=" flex-shrink-0 animate__animated animate__bounce animate__delay-2s animate__bounce animate__delay-1s rounded mt-1 container-lg">
+  <section id="skills" class="bg-secondary">
+    <div class=" flex-shrink-0 rounded container-lg">
       <div class="bg-secondary row min-vh-100 align-items-start align-content-start">
         <div class="m-md-3 col-md-12 home-text ">
-          <h1 class="text-capitalize text-center">Skillset in Programming</h1>
+          <h1 class=" mt-1 text-capitalize text-center">Skillset in Programming</h1>
           <h1 class="text-decoration-line-through fw-bolder"></h1>
           <h1 class="text-danger text-capitalize"></h1>
           <h2 class="fs-3"></h2>
@@ -91,35 +104,35 @@
                 <th scope="row">2</th>
                 <td>Frontend</td>
                 <td><img src="img/js.png" alt="js logo" width="100" height="100"
-                  class="d-inline-block align-text-top" /></td>
+                    class="d-inline-block align-text-top" /></td>
                 <td>Proficient</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>FullStack</td>
                 <td><img src="img/react.webp" alt="React logo" width="100" height="100"
-                  class="d-inline-block align-text-top" /></td>
+                    class="d-inline-block align-text-top" /></td>
                 <td>Proficient</td>
               </tr>
               <tr>
                 <th scope="row">4</th>
                 <td>FullStack</td>
                 <td><img src="img/python.png" alt="Python logo" width="340" height="100"
-                  class="d-inline-block align-text-top" /></td>
+                    class="d-inline-block align-text-top" /></td>
                 <td>Proficient</td>
               </tr>
               <tr>
                 <th scope="row">4</th>
                 <td>Backend</td>
                 <td><img src="img/php.png" alt="php logo" width="200" height="100"
-                  class="d-inline-block align-text-top" /></td>
+                    class="d-inline-block align-text-top" /></td>
                 <td>Proficient</td>
               </tr>
               <tr>
                 <th scope="row">4</th>
                 <td>Backend</td>
                 <td><img src="img/sql.jpg" alt="css/html logo" width="200" height="100"
-                  class="d-inline-block align-text-top" /></td>
+                    class="d-inline-block align-text-top" /></td>
                 <td>Proficient</td>
               </tr>
             </tbody>
@@ -129,15 +142,68 @@
       </div>
     </div>
   </section>
-  <!-- Button trigger modal -->
-  <button type="button"
-    class="m-auto rounded-circle fas fa-question-circle position-sticky bottom- start-0 btn btn-primary"
+  <!--Following project-->
+  <section class="min-vh-90 bg-primary project">
+    <div id="carousel-project" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-project" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel-project" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel-project" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item mx-auto active">
+          <div class="min-vh-80 bg-black">
+            <a data-toggle="tooltip" title="Click to github page of Mocking Bird" target="_blank"
+              href="https://github.com/freeCodeCamp/freeCodeCamp">
+              <img src="img/freecodecamp.png" class="d-inline w-100" alt="...">
+           </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>FreeCodeCamp</h5>
+              <p>Helping everyone who eager to learn coding in interactive way and its repo</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="min-vh-80 bg-black">
+            <a data-toggle="tooltip" title="Click to github page of Mocking Bird" target="_blank"
+              href="https://github.com/babysor/MockingBird">
+              <img src="img/mocking.jpg" class="d-block w-100 h-75" alt="...">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>MockingBird</h5>
+              <p>Interesting repo for an AI generative synthesizer for chinese speaking speech to mimic anyone.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div class="min-vh-80 bg-black bg-gradient">
+            <img src="img/bootstrap.png" class="d-block w-75" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bootstrap</h5>
+              <p>Surely, I am following this repo for its fantastic framework which helps me in many ways in previous projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-project" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-project" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+  <button type="button" class=" rounded-circle fas fa-question-circle position-sticky bottom-8 btn btn-danger"
     data-bs-toggle="modal" data-bs-target="#contactModal">
-
   </button>
-
   <!-- Modal -->
-  <div class=" modal fade modal-fullscreen-sm-down" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+  <div class="modal fade modal-fullscreen-sm-down" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="bg-secondary modal-dialog">
       <div class="modal-content">
@@ -154,10 +220,13 @@
       </div>
     </div>
   </div>
-  <footer class="fixed-bottom footer-sticky mt-auto py-lg-3 py-md-3 py-sm-2 bg-primary">
+
+  <!-- Footer -->
+  <footer class="fixed-bottom footer-sticky py-lg-4 py-md-3 py-sm-2 bg-primary">
     <div class="container">
-      <p class="text-muted">Copyright</p>
-    </div>
+      <div class="mx-auto">
+        <p class="text-muted">Copyright ©2021 All rights reserved | This Website is Develop by Will Lee</p>
+      </div>
   </footer>
 
 
