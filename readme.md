@@ -4,9 +4,9 @@
 
 #### Animations.css  - Animation applied to the profile picture
 #### Bootstrap - 
-##### Responsive Navigation bar, menu icon will be shown if the viewport is smaller than sm
-##### Responsive design applied - most of the item can resize accordingly
-##### Modal for contact section for better user experience, bottom left corner for easier access to the contact section
-##### Sticky footer
-##### Carousel for displaying the projects with indicators and navigation
-##### Other fundamental HTML CSS components too.
+##### 1. Responsive Navigation bar, menu icon will be shown if the viewport is smaller than sm
+##### 2. Responsive design applied - most of the item can resize accordingly
+##### 3. Modal for contact section for better user experience, bottom left corner for easier access to the contact section
+##### 4. Sticky footer
+##### 5. Carousel for displaying the projects with indicators and navigation
+##### 6. Other fundamental HTML CSS components too.
