@@ -21,6 +21,7 @@
 
 <body>
   <!-- Please go to github https://github.com/willlee1995/willlee1995.github.io/blob/main/index.html for viewing the source code and the files-->
+  <!-- Best viewed in Edge chormium version-->
   <!-- navbar -->
   <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-lg">
@@ -37,10 +38,13 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#skills">Programming Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Project That I am following</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
@@ -83,7 +87,8 @@
           <h1 class="text-decoration-line-through fw-bolder"></h1>
           <h1 class="text-danger text-capitalize"></h1>
           <h2 class="fs-3"></h2>
-          <div class="table-responsive"><!--responsive whenever the horizontal length is longer than the viewport, horizontal scroll bar-->
+          <div class="table-responsive">
+            <!--responsive whenever the horizontal length is longer than the viewport, horizontal scroll bar-->
             <table class="table">
               <thead>
                 <tr class="table-dark">
@@ -139,71 +144,85 @@
               </tbody>
             </table>
           </div>
-          
+
           <p class="text-muted"></p>
         </div>
       </div>
     </div>
   </section>
   <!--Following project-->
-  <section class="min-vh-90 bg-primary project">
-    <div id="carousel-project" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carousel-project" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carousel-project" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carousel-project" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item mx-auto active">
-          <div class="min-vh-80 bg-black">
-            <a class="pt-5 d-flex justify-content-center" data-toggle="tooltip" title="Click to github page of freeCodeCamp" target="_blank"
-              href="https://github.com/freeCodeCamp/freeCodeCamp">
-              <img src="img/freecodecamp.png" class="d-inline w-100" alt="...">
-           </a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>FreeCodeCamp</h5>
-              <p>Helping everyone who eager to learn coding in interactive way and its repo</p>
+  <section id="projects" class="min-vh-90 bg-black project">
+    <div class=" flex-shrink-0 rounded container-lg">
+      <div class="pt-3 bg-black row align-items-start align-content-start">
+        <div class="m-md-3 col-md-12 home-text ">
+          <div id="carousel-project" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel-project" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel-project" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel-project" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
             </div>
+            <div class="carousel-inner">
+              <div class="carousel-item mx-auto active">
+                <div class="min-vh-80 bg-black">
+                  <a class="pt-5 d-flex justify-content-center" data-toggle="tooltip"
+                    title="Click to github page of freeCodeCamp" target="_blank"
+                    href="https://github.com/freeCodeCamp/freeCodeCamp">
+                    <img src="img/freecodecamp.png" class="d-inline w-100" alt="freeCodeCamp picture">
+                  </a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Free CodeCamp</h5>
+                    <p>Helping everyone who is eager to learn coding in interactive way and its repo</p>
+                  </div>
 
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="min-vh-80 bg-white">
-            <a class="pt-5 d-flex justify-content-center" data-toggle="tooltip" title="Click to github page of Mocking Bird" target="_blank"
-              href="https://github.com/babysor/MockingBird">
-              <img src="img/mocking.jpg" class="d-block w-100 h-75" alt="...">
-            </a>
-            <div class="carousel-caption text-black d-none d-md-block">
-              <h5>MockingBird</h5>
-              <p>Interesting repo for an AI generative synthesizer for chinese speaking speech to mimic anyone.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="min-vh-80 bg-white">
+                  <a class="pt-5 d-flex justify-content-center" data-toggle="tooltip"
+                    title="Click to github page of Mocking Bird" target="_blank"
+                    href="https://github.com/babysor/MockingBird">
+                    <img src="img/mocking.jpg" class="d-block w-100 h-75" alt="mockingbird picture">
+                  </a>
+                  <div class="carousel-caption text-black d-none d-md-block">
+                    <h5>Mocking Bird</h5>
+                    <p>Interesting repo for an AI generative synthesizer for chinese speaking speech to mimic anyone.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="carousel-item">
+                <div class="min-vh-80 bg-black bg-gradient">
+                  <a class="pt-5 d-flex justify-content-center" data-toggle="tooltip"
+                    title="Click to github page of Bootstrap" target="_blank" href="https://github.com/twbs/bootstrap">
+                    <img src="img/bootstrap.png" class="d-block w-50" alt="Bootstrap picture">
+                  </a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Bootstrap</h5>
+                    <p>Surely, I am following this repo for its fantastic framework which helps me in many ways in
+                      previous
+                      projects</p>
+                  </div>
+                </div>
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-project" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-project" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
 
         </div>
-        <div class="carousel-item">
-          <div class="min-vh-80 bg-black bg-gradient">
-            <a class="pt-5 d-flex justify-content-center" data-toggle="tooltip" title="Click to github page of Bootstrap" target="_blank"
-              href="https://github.com/twbs/bootstrap">
-              <img src="img/bootstrap.png" class="d-block w-50" alt="...">
-            </a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Bootstrap</h5>
-              <p>Surely, I am following this repo for its fantastic framework which helps me in many ways in previous projects</p>
-            </div>
-          </div>
-        </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-project" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carousel-project" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-
+    </div>
   </section>
   <button type="button" class=" rounded-circle fas fa-question-circle position-sticky bottom-8 btn btn-danger"
     data-bs-toggle="modal" data-bs-target="#contactModal">
@@ -229,9 +248,9 @@
 
   <!-- Footer -->
   <footer class="fixed-bottom footer-sticky py-lg-4 py-md-3 py-sm-2 bg-primary">
-    <div class="container">
+    <div class="d-flex">
       <div class="mx-auto">
-        <p class="text-muted">Copyright ©2021 All rights reserved | This Website is Develop by Will Lee</p>
+        <p class="text-muted">Copyright ©2021 All rights reserved | This Website is Developed by Will Lee</p>
       </div>
   </footer>
 
