@@ -1,4 +1,4 @@
-# Perosnal Website for COMP5322
+# Personal Website for COMP5322 by 20006323G
 
 ## Features used in the website
 
